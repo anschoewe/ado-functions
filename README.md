@@ -23,6 +23,7 @@ func start
 # in a new Terminal tab...
 ngrok http 7071
 ```
+Now you can enter the ngrok URL into the Azure DevOps Webhooks. For example, `https://777a-75-166-52-40.ngrok.io/api/repoevent?eventType=pushed`.  When Azure DevOps invokes the webhook, ngrok will listen on that end point and forward the request to `http://localhost:7071/api/repoevent?eventType=pushed`
 
 # Deploy to Azure Functions in Cloud
 First, build the app for the OS and architecture in Azure App Service. It needs to run in an Linux App Service.
