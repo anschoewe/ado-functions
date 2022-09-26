@@ -1,5 +1,5 @@
 # Overview
-This project consumes webhook requests from Azure DevOps.   The code runs inside the Azure Functions framework
+This project consumes webhook requests from Azure DevOps.   The code runs inside the Azure Functions framework.
 [Here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers) is a good technical description of how to run Azure Functions with Golang code inside.
 
 # Local development
