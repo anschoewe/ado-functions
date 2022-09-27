@@ -1,6 +1,8 @@
 # Overview
 This project consumes webhook requests from Azure DevOps.   The code runs inside the Azure Functions framework.
 [Here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-custom-handlers) is a good technical description of how to run Azure Functions with Golang code inside.
+<br/>
+Of note, the instructions for creating the Azure Function App, in Azure, are flawed.  By default, the Visual Studio Code extension for Azure Fucntions will create an Azure Function where the OS of the underlying Azure App Service is Windows.  But because we're running a Custom Handler in an Azure Function with Golang code, we need to use an App Service with a Linux OS.  You do this by running the Command Pallet with this command `Azure Functions: Create function app in Azure...(Advanced)`.  You can find more complete instructions [here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp#enable-publishing-with-advanced-create-options).
 
 # Local development
 ```
